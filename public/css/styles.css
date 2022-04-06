@@ -1,0 +1,407 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+div.top-header{
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+header div.logo{
+    width: 19%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+header nav{
+    font-size: 12px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .buscador{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .buscador .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+header .buscador .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    padding: 3px;
+    border-radius: 10px;
+    margin: 5px 0 0 0;
+    width: 21px;
+}
+
+header .buscador .submit i{
+    margin: auto;
+}
+
+header div.top-header p{ 
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    margin: 10px 0px 20px 0px;
+    padding: 15px 10px;
+    width: 40px;
+}
+
+.price{
+    font-size: 18px;
+    flex: 30%;
+}
+
+.discount {
+    flex: 70%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px;
+}
+
+main section article .main-article {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+.main-article {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+
+.main-article i{
+    display: flex;
+    font-size: 16px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    right: 40px;
+    top: -15px;
+    justify-content: center;
+    align-items: center;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+.form{
+    width: 45%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 150px;
+    margin-top: 10px;
+    background-color: rgba(204, 204, 204, 0.753);
+}
+
+.banner{
+    margin: 5px 0;
+}
+.form h3{
+    color: black;
+    font-size: 20px;
+    display: flex;
+    align-self: flex-start;
+    margin: 0 25px;
+}
+
+.section-login .form input{
+    width: 350%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px 0;
+}
+
+.username{
+    display: flex;
+    align-self: center;
+    width: 90%;
+}
+
+.password-confirm{
+    display: flex;
+    align-self: center;
+    width: 90%;
+}
+
+.login-confirm{
+    align-self: center;
+}
+
+.form button{
+    padding: 0.5em 1em;
+    border: none;
+    background-color: #3583fa;
+    cursor: pointer;
+    width: 80px;
+    border-radius: 4px;
+    margin: 10px 0;
+    max-width: 400px;
+    color: white;
+}
+
+.foto input{
+    font-size: 12px;
+}
+
+.form button a{
+    text-decoration: none;
+    color: white;
+}
+
+.form button a:visited{
+    color: white;
+}
+
+.perfil{
+    display: flex;
+    width: 240px;
+    align-self: flex-start;
+    margin: 10px;
+}
+
+.perfil input{
+    justify-self: flex-start;
+    margin: 0;
+    height: 15px;
+}
+
+.intereses{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin: 0 0 10px 40px;
+}
+
+.intereses input{
+    justify-self: flex-start;
+    margin: 0;
+    height: 15px;
+    display: flex;
+    position: relative;
+    top: 15px;
+}
+
+.intereses label{
+    justify-self: flex-start;
+    margin: 0;
+    height: 15px;
+}
+
+.section-register .form .perfil{
+    display:block
+}
+
+.password{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 10px;
+}
+
+.pie-de-pagina{
+    display: flex;
+    padding: 10px;
+}
+
+.pie-de-pagina div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-titulares{
+    font-weight: bold;
+    font-size: 20pxS;
+}
+
+.iconos{
+    color: #3583fa;
+}
+
+.iconos i{
+    width: 30%;
+}
+
+.iconos:hover{
+    color: green;
+}
+
+.texto-descripciones{
+    color: #666;
+}
+@media (min-width: 361px){
+
+    header div.logo{
+        width: 30%;
+    }
+
+    .description{
+        display: none;
+    }
+
+    main section article{
+        flex: 45%;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    main section .products {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+}
+
+@media (min-width: 769px){
+    .description {
+        display: none;
+    }
+
+    .products article:hover .description{
+        display: block;
+    }
+
+    .products article:hover i{
+    transform: rotate(-90deg);
+    transition-duration: 300ms;
+    }
+
+    .products article:hover {                                     
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section article{
+        flex: 22%;
+    }
+
+    header nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+        font-size: 15px;
+    }
+
+    header nav ul{
+        display: flex;
+    }
+
+    header nav ul li{
+        padding: 0 10px;
+    }
+
+    header div.logo{
+        width: 20%;
+    }
+
+    .form button:hover{
+        background-color: #0022AA;
+        transition-duration: 500ms;
+    }
+
+    .form button:hover a{
+        transition-duration: 500ms;
+    }
+}
