@@ -1,8 +1,3 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
@@ -16,11 +11,6 @@ p{
     font-size: 16px;
     display: flex;
     align-items: center;
-}
-div.top-header{
-    padding: 10px 30px;
-    display: flex;
-    justify-content: space-between;
 }
 
 header{
@@ -56,21 +46,20 @@ header .buscador{
 
 header .buscador .input{
     background-color: #FFF;
-    border: 1px solid #000;
     outline: none;
     color: #666;
     padding: 2px;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 100%;
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    font-size: 12px;
 
 }
 header .buscador .submit{
     background-color: #FFF;
-    border: 1px solid #000;
     color: #666;
     padding: 3px;
     border-radius: 10px;
@@ -182,14 +171,13 @@ main section h3{
 }
 
 .form{
-    width: 45%;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 150px;
-    margin-top: 10px;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
     background-color: rgba(204, 204, 204, 0.753);
 }
 
@@ -200,7 +188,7 @@ main section h3{
     color: black;
     font-size: 20px;
     display: flex;
-    align-self: flex-start;
+    align-self: center;
     margin: 0 25px;
 }
 
@@ -249,6 +237,12 @@ main section h3{
     color: white;
 }
 
+.form input{
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
 .form button a:visited{
     color: white;
 }
@@ -256,7 +250,7 @@ main section h3{
 .perfil{
     display: flex;
     width: 240px;
-    align-self: flex-start;
+    align-self: center;
     margin: 10px;
 }
 
@@ -264,12 +258,12 @@ main section h3{
     justify-self: flex-start;
     margin: 0;
     height: 15px;
+    margin: 0 10px;
 }
 
 .intereses{
     display: flex;
     flex-direction: column;
-    align-self: flex-start;
     margin: 0 0 10px 40px;
 }
 
@@ -280,6 +274,7 @@ main section h3{
     display: flex;
     position: relative;
     top: 15px;
+    left: -20px;
 }
 
 .intereses label{
@@ -298,15 +293,11 @@ main section h3{
     margin: 0 0 0 10px;
 }
 
-.pie-de-pagina{
-    display: flex;
-    padding: 10px;
-}
-
 .pie-de-pagina div{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px;
 }
 
 .texto-titulares{
@@ -318,12 +309,8 @@ main section h3{
     color: #3583fa;
 }
 
-.iconos i{
-    width: 30%;
-}
-
 .iconos:hover{
-    color: green;
+    color: #0022AA;
 }
 
 .texto-descripciones{
@@ -331,8 +318,32 @@ main section h3{
 }
 @media (min-width: 361px){
 
+    .form{
+        width: 100%;
+    }
+
+    header .buscador{
+        width: 45%;
+    }
+
+    div.top-header{
+        padding: 10px 30px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: inherit;
+        justify-content: space-around;
+    }
+
+    .pie-de-pagina{
+        flex-direction: column;
+    }
+
+    .pie-de-pagina div{
+        margin: 5px;
+    }
+
     header div.logo{
-        width: 30%;
+        width: 45%;
     }
 
     .description{
@@ -355,7 +366,34 @@ main section h3{
     }
 }
 
+.banner{
+    height: 30%;
+}
+
+.iconos i{
+    font-size: 35px;
+}
+
 @media (min-width: 769px){
+
+    .pie-de-pagina div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .pie-de-pagina{
+        display: flex;
+        padding: 10px;
+        margin: 10px 0;
+        flex-direction: inherit;
+    }
+
+    div.burger-menu i{
+        display: none;
+    }
+
     .description {
         display: none;
     }
@@ -403,5 +441,16 @@ main section h3{
 
     .form button:hover a{
         transition-duration: 500ms;
+    }
+
+    div.top-header{
+        padding: 10px 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .form{
+        width: 45%;
     }
 }
